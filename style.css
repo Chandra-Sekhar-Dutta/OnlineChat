@@ -1,0 +1,138 @@
+/* General Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body Style with Background Image */
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('Background.jpg') no-repeat center center fixed;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    filter: invert();
+}
+
+
+/* Logo Style and Navbar */
+
+nav {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 100%;
+    height: 60px;
+    /* Height of the navbar */
+    background-color: rgb(255, 255, 255, 0.8);
+    /* Black translucent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+
+/* Message Container */
+
+#message-container {
+    width: 80%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 70vh;
+    backdrop-filter: blur(10px);
+}
+
+
+/* Individual Message Style */
+
+#message-container div {
+    background-color: #e9ecef;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+#message-container div:nth-child(2n) {
+    background-color: #d0e4ff;
+}
+
+
+/* Send Container Style */
+
+#send-container {
+    position: fixed;
+    bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Input Style */
+
+#message-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+
+/* Button Style */
+
+#send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    #send-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    #message-input {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    #send-button {
+        width: 100%;
+    }
+}
