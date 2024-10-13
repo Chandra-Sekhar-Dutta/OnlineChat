@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ChatWeb</title>
+    <link rel="icon" href="chat.png" type="image/icon type">
     <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -17,11 +18,18 @@
         <img class="logo" src="chat.png" alt=""> WebChat.com
     </nav>
 
+    <div id="exit-message-container"></div>
+    <!-- Container for exit messages -->
+
     <div id="message-container"></div>
     <form id="send-container">
         <input type="text" id="message-input">
         <button type="submit" id="send-button">Send</button>
+        <button type="button" id="exit-button">Exit</button>
+        <!-- Exit button -->
     </form>
+
+
 </body>
 
 </html>
