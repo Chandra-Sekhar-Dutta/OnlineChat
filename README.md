@@ -9,8 +9,7 @@ ChatWeb is a simple and interactive online chatting platform that allows users t
 - [Installation](#installation)
 - [Usage](#usage)
 - [File Structure](#file-structure)
-- [Contributors](#contributors)
-- [License](#license)
+
 
 ## Features
 
